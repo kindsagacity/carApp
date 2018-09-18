@@ -10,7 +10,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     height: metrics.screenHeight,
     width: metrics.screenWidth,
-    resizeMode: 'cover',
+    resizeMode: 'contain',
     position: 'relative'
   },
   cancel: {

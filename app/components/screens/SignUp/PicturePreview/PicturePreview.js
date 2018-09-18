@@ -26,7 +26,7 @@ class PicturePreview extends Component {
   render () {
     const photoUri = this.props.navigation.getParam('photoUri', null)
     return (
-      <ImageBackground source={{uri: photoUri}} style={styles.preview}>
+      <ImageBackground imageStyle={styles.preview} source={{uri: photoUri}} style={{width: '100%', height: '100%'}}>
         <TouchableOpacity style={styles.cancel} onPress={this.onCancelPress}>
           <Icon color={colors.white} name='x' size={30} />
         </TouchableOpacity>
